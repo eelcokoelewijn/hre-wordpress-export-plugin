@@ -59,47 +59,24 @@ class DataManager {
 	private function exportColumnNames()
 	{
 		$column_names = null;
-		if (array_key_exists($this->product_id, $this::$participant)) {
-			$column_names['Naam'] = null;
-			$column_names['Woonplaats'] = null;
-			$column_names['E-mailadres'] = null;
-			$column_names['Telefoon'] = null;
-			$column_names['Telefoon bij Calamiteiten'] = null;
-			$column_names['Geboortedatum'] = null;
-			$column_names['Geslacht'] = null;
-			$column_names['Flessenpost'] = null;
-			$column_names['Ambitie'] = null;
-			$column_names['NTB Licentie'] = null;
-			$column_names['MyLaps Chip'] = null;
-			$column_names['MyLaps Chipnummer'] = null;
-			$column_names['Diner Zaterdag'] = null;
-			$column_names['Kamperen (gratis voor deelnemers en vrijwilligers)'] = null;
-			$column_names['Ontbijt Zondag'] = null;
-			$column_names['NTB Licentienummer'] = null;
-			$column_names['Ontbijt Zaterdag'] = null;
-			$column_names['Bring & Braai (Vrijdag)'] = null;
-		} else if (array_key_exists($this->product_id, $this::$visitor)) {
-			$column_names['Naam'] = null;
-			$column_names['E-mailadres'] = null;
-			$column_names['Flessenpost'] = null;
-			$column_names['Diner Zaterdag'] = null;
-			$column_names['Kamperen "Zaterdag/Zondag"'] = null;
-			$column_names['Bring & Braai (Vrijdag)'] = null;
-		} else if (array_key_exists($this->product_id, $this::$volunteer)) {
-			$column_names['Naam'] = null;
-			$column_names['Adres'] = null;
-			$column_names['E-mailadres'] = null;
-			$column_names['Telefoon'] = null;
-			$column_names['Geboortedatum'] = null;
-			$column_names['Flessenpost'] = null;
-			$column_names['Bij welk onderdeel zou je willen helpen?'] = null;
-			$column_names['Zelfstandigheid'] = null;
-			$column_names['Ik werk graag samen met:'] = null;
-			$column_names['De organisatie mag wat mij betreft met het volgende rekening houden'] = null;
-			$column_names['Diner Zaterdag (gratis voor vrijwilligers)'] = null;
-			$column_names['Kamperen (gratis voor deelnemers en vrijwilligers)'] = null;
-			$column_names['Ontbijt Zondag'] = null;
-		}
+		$column_names['Naam'] = null;
+		$column_names['Woonplaats'] = null;
+		$column_names['E-mailadres'] = null;
+		$column_names['Telefoon'] = null;
+		$column_names['Telefoon bij Calamiteiten'] = null;
+		$column_names['Geboortedatum'] = null;
+		$column_names['Geslacht'] = null;
+		$column_names['Flessenpost'] = null;
+		$column_names['Ambitie'] = null;
+		$column_names['NTB Licentie'] = null;
+		$column_names['MyLaps Chip'] = null;
+		$column_names['MyLaps Chipnummer'] = null;
+		$column_names['Diner Zaterdag'] = null;
+		$column_names['Kamperen (gratis voor deelnemers en vrijwilligers)'] = null;
+		$column_names['Ontbijt Zondag'] = null;
+		$column_names['NTB Licentienummer'] = null;
+		$column_names['Ontbijt Zaterdag'] = null;
+		$column_names['Bring & Braai (Vrijdag)'] = null;
 		return $column_names;
 	}
 
