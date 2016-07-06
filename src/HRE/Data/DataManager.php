@@ -66,17 +66,13 @@ class DataManager {
 		$column_names['Telefoon bij Calamiteiten'] = null;
 		$column_names['Geboortedatum'] = null;
 		$column_names['Geslacht'] = null;
-		$column_names['Flessenpost'] = null;
-		$column_names['Ambitie'] = null;
-		$column_names['NTB Licentie'] = null;
 		$column_names['MyLaps Chip'] = null;
 		$column_names['MyLaps Chipnummer'] = null;
+		$column_names['Flessenpost'] = null;
+		$column_names['Programma'] = null;
 		$column_names['Diner Zaterdag'] = null;
-		$column_names['Kamperen (gratis voor deelnemers en vrijwilligers)'] = null;
-		$column_names['Ontbijt Zondag'] = null;
-		$column_names['NTB Licentienummer'] = null;
-		$column_names['Ontbijt Zaterdag'] = null;
-		$column_names['Bring & Braai (Vrijdag)'] = null;
+		$column_names['opties'] = null;
+
 		return $column_names;
 	}
 
@@ -101,7 +97,6 @@ class DataManager {
 		$registrations = $this->fetchRegistations();
 
 		$order_id= 0;
-		$newRegistration = false;
 		$currentName = '';
 		$data = array();
 		$results = array();
@@ -111,7 +106,6 @@ class DataManager {
 					$data['order_id'] = $order_id;
 					$results[] = array_merge($this->exportColumnNames(), $data);
 					$data = null;
-					$newRegistration = false;
 				}
 				$order_id = $registration['order_id'];
 				$currentName = $registration['Name'];
@@ -119,6 +113,5 @@ class DataManager {
 			$data[$registration['meta_key']] = $registration['meta_value'];
 		}
 		return $results;
-
 	}
 }
