@@ -112,6 +112,9 @@ class DataManager {
 			}
 			$data[$registration['meta_key']] = $registration['meta_value'];
 		}
+		$data['order_id'] = $order_id;
+		$results[] = array_merge($this->exportColumnNames(), $data);
 		return $results;
+
 	}
 }
