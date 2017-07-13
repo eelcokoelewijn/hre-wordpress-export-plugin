@@ -63,15 +63,16 @@ class DataManager {
 		$column_names['Woonplaats'] = null;
 		$column_names['E-mailadres'] = null;
 		$column_names['Telefoon'] = null;
-		$column_names['Telefoon bij Calamiteiten'] = null;
 		$column_names['Geboortedatum'] = null;
 		$column_names['Geslacht'] = null;
 		$column_names['MyLaps Chip'] = null;
 		$column_names['MyLaps Chipnummer'] = null;
+		$column_names['Finale materiaal'] = null;
 		$column_names['Flessenpost'] = null;
+		$column_names['Festival kaartje (+ €15,00)'] = null;
 		$column_names['Programma'] = null;
 		$column_names['Diner Zaterdag'] = null;
-		$column_names['opties'] = null;
+		$column_names['Totaal'] = null;
 
 		return $column_names;
 	}

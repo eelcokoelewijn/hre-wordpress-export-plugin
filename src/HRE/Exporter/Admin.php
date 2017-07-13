@@ -117,8 +117,9 @@ class Admin {
 		$product_ids = get_transient( Admin::$productCacheKey );
 
 		// Valid cache found
-		if ( false !== $product_ids )
-			return $product_ids;
+		// if ( false !== $product_ids ) {
+		// 	return $product_ids;
+		// }
 
 		$products = get_posts( array(
 			'post_type'      => array( 'product', 'product_variation' ),
